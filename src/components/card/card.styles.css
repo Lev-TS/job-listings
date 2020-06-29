@@ -1,0 +1,23 @@
+.card-container {
+	border: 1px solid red;
+	border-radius: 6px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	width: 1152px;
+} 
+
+
+.logo .image{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border: none;
+	border-radius: 100%;
+	font-size: 0;
+	line-height: 0;
+	vertical-align: middle;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-color: hsl(180, 29%, 50%);
+}
