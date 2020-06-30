@@ -1,0 +1,7 @@
+.company {
+    color: hsl(180, 29%, 50%);
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 20px;
+}

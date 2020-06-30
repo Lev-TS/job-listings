@@ -1,0 +1,19 @@
+.info-list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+}
+
+.info-list-container li {
+    display: inline-block;
+    color: hsl(180, 8%, 52%);
+}
+
+.bullet{
+    height: 3px;
+    width: 3px;
+    border-radius: 100%;
+    background-color: hsl(180, 8%, 52%);
+
+}

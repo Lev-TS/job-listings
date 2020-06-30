@@ -1,0 +1,24 @@
+.position {
+    color: hsl(180, 14%, 20%);
+    text-decoration: none;
+    font-weight: 700;
+    outline-color: hsl(180, 29%, 50%);
+}
+
+.position:visited{
+    color: hsl(180, 14%, 20%);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.position:hover{
+    color: hsl(180, 29%, 50%);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.position:active{
+    color: hsl(180, 14%, 20%);
+    text-decoration: none;
+    font-weight: 700;
+}

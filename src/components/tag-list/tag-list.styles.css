@@ -1,0 +1,28 @@
+.tag-container {
+    display: inline-block;
+}
+
+.new-tag, .featured-tag {
+    display: inline-block;
+    color: white;
+    padding: 10px 7px 7px 7px; 
+    text-align: center;
+    border-radius: 30px;
+    font-weight: 700;
+    line-height: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.new-tag{
+    background-color: hsl(180, 29%, 50%);
+    width: 35px;
+
+}
+
+.featured-tag {
+    background-color: hsl(180, 14%, 20%);
+    width: 60px;
+    margin-left: 10px;
+}
+

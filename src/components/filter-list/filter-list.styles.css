@@ -1,20 +1,30 @@
-.filter-list, .language-list, .tool-list {
+.filter-container, .language-filter-container, .tool-filter-container {
     display: inline-block; 
 }
 
-button.filter{
-    background-color: hsl(180, 31%, 95%);
-    border: none;
-    border-radius: 2px;
-    color: hsl(180, 29%, 50%);
-    text-align: center;
-    font-weight: 500;
-    font-size: 15px;
-    display: inline-block;
-    margin-left: 4px;
+.filter-container {
+    margin-left: auto;
+    margin-right: 40px;
 }
 
-button.filter:hover{
+button.filter {
+    background-color: hsl(180, 31%, 95%);
+    border: none;
+    border-radius: 3px;
+    color: hsl(180, 29%, 50%);
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: 15px;
+    padding: 6px 8px;
+    border: none;
+    outline-color: hsl(180, 29%, 50%);
+}
+
+button.filter:hover {
     background-color: hsl(180, 29%, 50%);
     color: hsl(180, 52%, 96%);
+    cursor: pointer;
+    border: none;
 }
