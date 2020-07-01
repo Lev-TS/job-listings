@@ -3,10 +3,9 @@ import { FilterList } from '../filter-list/filter-list.component';
 import { Logo } from '../logo/logo.component';
 import { ShortInfo } from '../short-info/short-info.component';
 
-
 import './card.styles.css';
 
-export const Card = ({ listing }) => (
+export const Card = ({ listing, handleClickAddFilter }) => (
 	<div
 		className="card-container"
 		style={{
@@ -15,6 +14,9 @@ export const Card = ({ listing }) => (
 	>
 		<Logo imagePath={listing.logo} />
 		<ShortInfo listing={listing} />
-		<FilterList listing={listing} />
+		<FilterList
+			listing={listing}
+			handleClickAddFilter={handleClickAddFilter}
+		/>
 	</div>
 );

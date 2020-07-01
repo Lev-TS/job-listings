@@ -3,16 +3,24 @@ import React from 'react';
 import uniqid from 'uniqid';
 import './filter-list.styles.css';
 
-export const FilterList = ({ listing }) => {
+export const FilterList = ({ listing, handleClickAddFilter }) => {
 	return (
 		<div className="filter-container">
-			<button className="filter">{ listing.role }</button>
-			<button className="filter">{ listing.level }</button>
+			<button className="filter" onClick={handleClickAddFilter}>
+				{listing.role}
+			</button>
+			<button className="filter" onClick={handleClickAddFilter}>
+				{listing.level}
+			</button>
 			<div className="language-filter-container">
 				{listing.languages.map((lingo) => {
 					return (
-						<button key={ uniqid.time() } className="filter">
-							{ lingo }
+						<button
+							key={uniqid.time()}
+							className="filter"
+							onClick={handleClickAddFilter}
+						>
+							{lingo}
 						</button>
 					);
 				})}
@@ -20,8 +28,12 @@ export const FilterList = ({ listing }) => {
 			<div className="tool-filter-container">
 				{listing.tools.map((tool) => {
 					return (
-						<button key={ uniqid.time() } className="filter">
-							{ tool }
+						<button
+							key={uniqid.time()}
+							className="filter"
+							onClick={handleClickAddFilter}
+						>
+							{tool}
 						</button>
 					);
 				})}
