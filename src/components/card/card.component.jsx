@@ -5,7 +5,7 @@ import { ShortInfo } from '../short-info/short-info.component';
 
 import './card.styles.css';
 
-export const Card = ({ listing, handleClickAddFilter }) => (
+export const Card = ({ listing, handleAddFilter }) => (
 	<div
 		className="card-container"
 		style={{
@@ -16,7 +16,7 @@ export const Card = ({ listing, handleClickAddFilter }) => (
 		<ShortInfo listing={listing} />
 		<FilterList
 			listing={listing}
-			handleClickAddFilter={handleClickAddFilter}
+			handleAddFilter={handleAddFilter}
 		/>
 	</div>
 );

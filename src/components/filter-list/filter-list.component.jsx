@@ -3,13 +3,13 @@ import React from 'react';
 import uniqid from 'uniqid';
 import './filter-list.styles.css';
 
-export const FilterList = ({ listing, handleClickAddFilter }) => {
+export const FilterList = ({ listing, handleAddFilter }) => {
 	return (
 		<div className="filter-container">
-			<button className="filter" onClick={handleClickAddFilter}>
+			<button className="filter" onClick={handleAddFilter}>
 				{listing.role}
 			</button>
-			<button className="filter" onClick={handleClickAddFilter}>
+			<button className="filter" onClick={handleAddFilter}>
 				{listing.level}
 			</button>
 			<div className="language-filter-container">
@@ -18,7 +18,7 @@ export const FilterList = ({ listing, handleClickAddFilter }) => {
 						<button
 							key={uniqid.time()}
 							className="filter"
-							onClick={handleClickAddFilter}
+							onClick={handleAddFilter}
 						>
 							{lingo}
 						</button>
@@ -31,7 +31,7 @@ export const FilterList = ({ listing, handleClickAddFilter }) => {
 						<button
 							key={uniqid.time()}
 							className="filter"
-							onClick={handleClickAddFilter}
+							onClick={handleAddFilter}
 						>
 							{tool}
 						</button>
