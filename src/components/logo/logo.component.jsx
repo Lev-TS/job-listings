@@ -7,7 +7,7 @@ export const Logo = ({ imagePath }) => {
 		<div className="logo-container">
 			<span
 				className="logo"
-				style={{ backgroundImage: `url("data:image/svg+xml,${imagePath}")` }}
+				style={{ backgroundImage: `url(${process.env.PUBLIC_URL}${imagePath})` }}
 			></span>
 		</div>
 	);

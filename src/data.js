@@ -2,7 +2,7 @@ export const data = [
   {
     "id": 1,
     "company": "Photosnap",
-    "logo": "../../images/logos/photosnap.svg",
+    "logo": "/logos/photosnap.svg",
     "new": true,
     "featured": true,
     "position": "Senior Frontend Developer",
@@ -17,7 +17,7 @@ export const data = [
   {
     "id": 2,
     "company": "Manage",
-    "logo": "../../images/logos/manage.svg",
+    "logo": "/logos/manage.svg",
     "new": true,
     "featured": true,
     "position": "Fullstack Developer",
@@ -32,7 +32,7 @@ export const data = [
   {
     "id": 3,
     "company": "Account",
-    "logo": "../../images/logos/account.svg",
+    "logo": "/logos/account.svg",
     "new": true,
     "featured": false,
     "position": "Junior Frontend Developer",
@@ -47,7 +47,7 @@ export const data = [
   {
     "id": 4,
     "company": "MyHome",
-    "logo": "../../images/logos/myhome.svg",
+    "logo": "/logos/myhome.svg",
     "new": false,
     "featured": false,
     "position": "Junior Frontend Developer",
@@ -62,7 +62,7 @@ export const data = [
   {
     "id": 5,
     "company": "Loop Studios",
-    "logo": "../../images/logos/loop-studios.svg",
+    "logo": "/logos/loop-studios.svg",
     "new": false,
     "featured": false,
     "position": "Software Engineer",
@@ -77,7 +77,7 @@ export const data = [
   {
     "id": 6,
     "company": "FaceIt",
-    "logo": "../../images/logos/faceit.svg",
+    "logo": "/logos/faceit.svg",
     "new": false,
     "featured": false,
     "position": "Junior Backend Developer",
@@ -92,7 +92,7 @@ export const data = [
   {
     "id": 7,
     "company": "Shortly",
-    "logo": "../../images/logos/shortly.svg",
+    "logo": "./logos/shortly.svg",
     "new": false,
     "featured": false,
     "position": "Junior Developer",
@@ -107,7 +107,7 @@ export const data = [
   {
     "id": 8,
     "company": "Insure",
-    "logo": "../../images/logos/insure.svg",
+    "logo": "/logos/insure.svg",
     "new": false,
     "featured": false,
     "position": "Junior Frontend Developer",
@@ -122,7 +122,7 @@ export const data = [
   {
     "id": 9,
     "company": "Eyecam Co.",
-    "logo": "../../images/logos/eyecam-co.svg",
+    "logo": "/logos/eyecam-co.svg",
     "new": false,
     "featured": false,
     "position": "Full Stack Engineer",
@@ -137,7 +137,7 @@ export const data = [
   {
     "id": 10,
     "company": "The Air Filter Company",
-    "logo": "../../images/logos/the-air-filter-company.svg",
+    "logo": "/logos/the-air-filter-company.svg",
     "new": false,
     "featured": false,
     "position": "Front-end Dev",

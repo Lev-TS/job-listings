@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 270px;
+    width: 225px;
+    font-size: 14px;
 }
 
 .info-list-container li {
@@ -15,5 +16,4 @@
     width: 3px;
     border-radius: 100%;
     background-color: hsl(180, 8%, 52%);
-
 }

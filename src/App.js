@@ -1,4 +1,5 @@
 import React from 'react';
+import { Header } from './components/header/header.component'
 import { Attribution } from './components/attribution/attribution.component';
 import { CardList } from './components/card-list/card-list.component';
 
@@ -17,12 +18,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className="App">
-				<div className="header">
-					<span id="image">
-						<span className="inner"></span>
-					</span>
-				</div>
-
+				<Header />
 				<CardList listings={this.state.listings} />
 				<Attribution />
 			</div>
