@@ -1,4 +1,4 @@
-.filter-container, .language-filter-container, .tool-filter-container {
+.language-filter-container, .tool-filter-container {
     display: inline-block; 
 }
 
@@ -9,7 +9,6 @@
 
 button.filter {
     background-color: hsl(180, 31%, 95%);
-    border: none;
     border-radius: 3px;
     color: hsl(180, 29%, 50%);
     text-align: center;
@@ -20,11 +19,20 @@ button.filter {
     padding: 6px 8px;
     border: none;
     outline-color: hsl(180, 29%, 50%);
+    cursor: pointer;
 }
 
 button.filter:hover {
     background-color: hsl(180, 29%, 50%);
     color: hsl(180, 52%, 96%);
-    cursor: pointer;
-    border: none;
+}
+
+@media only screen and (max-width: 1080px) {
+    .filter-container {
+        margin: 0 25px 10px 25px;
+    }
+
+    button.filter {
+        margin: 0 15px 15px 0; 
+    }
 }

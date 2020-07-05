@@ -16,7 +16,7 @@ export const FilterList = ({ listing, handleAddFilter }) => {
 				{listing.languages.map((lingo) => {
 					return (
 						<button
-							key={uniqid.time()}
+							key={uniqid('2')}
 							className="filter"
 							onClick={handleAddFilter}
 						>

@@ -1,9 +1,28 @@
 import React from 'react';
-import './selected-filter-list.styles.css';
+import { SelectedFilter } from '../selected-filter/selected-filter.component';
 
-export const SelectedFilterList = () => {
-    return (
-        <div className="selected-filter-container">
-        </div>
-    )
-}
+import './selected-filter-list.styles.css';
+import uniqid from 'uniqid';
+
+export const SelectedFilterList = ({
+	filters,
+	handleRemoveFilter,
+	handleClear,
+}) => {
+	return (
+		<div className="selected-filter-list">
+			<div className="selected-filter-container">
+				{filters.map((filter) => (
+					<SelectedFilter
+						key={uniqid('1')}
+						filter={filter}
+						handleRemoveFilter={handleRemoveFilter}
+					/>
+				))}
+			</div>
+			<button className="clear" onClick={handleClear}>
+				Clear
+			</button>
+		</div>
+	);
+};

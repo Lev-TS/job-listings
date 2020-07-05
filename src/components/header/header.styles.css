@@ -9,7 +9,7 @@
 	background-size: 100%;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	background-image: url('./images/bg-header-desktop.svg');
+	background-image: url('../../images/bg-header-desktop.svg');
 	background-color: hsl(180, 29%, 50%);
 }
 
@@ -19,9 +19,9 @@
 	padding-top: 10%;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1080px) {
 	.header #image {
-		background-image: url('./images/bg-header-mobile.svg');
+		background-image: url('../../images/bg-header-mobile.svg');
 		padding-top: 30%;
 	}
 }

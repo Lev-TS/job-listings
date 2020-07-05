@@ -16,13 +16,13 @@
 
 .new-tag{
     background-color: hsl(180, 29%, 50%);
-    width: 35px;
+    width: 50px;
 
 }
 
 .featured-tag {
     background-color: hsl(180, 14%, 20%);
-    width: 60px;
+    width: 70px;
     margin-left: 10px;
 }
 

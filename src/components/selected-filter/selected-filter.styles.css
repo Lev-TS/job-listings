@@ -1,0 +1,37 @@
+.selected-filter {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+
+.selected-filter p {
+    display: inline-block;
+    background-color: hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+    border-radius: 4px 0 0 4px;
+    padding: 7px;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+}
+
+.selected-filter button {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+	vertical-align: middle;
+	background-size: 45%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-image: url('../../images/icon-remove.svg');
+    background-color: hsl(180, 29%, 50%);
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.selected-filter button:hover {
+    background-color: hsl(180, 14%, 20%);
+}
+

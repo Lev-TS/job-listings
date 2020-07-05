@@ -9,10 +9,10 @@ export const Card = ({ listing, handleAddFilter }) => (
 	<div
 		className="card-container"
 		style={{
-			borderLeft: listing.featured && '5px solid hsl(180, 29%, 50%)',
+			borderLeft: listing.featured && '5px solid hsl(180, 29%, 50%)'
 		}}
 	>
-		<Logo imagePath={listing.logo} />
+		<Logo listing={listing} />
 		<ShortInfo listing={listing} />
 		<FilterList
 			listing={listing}

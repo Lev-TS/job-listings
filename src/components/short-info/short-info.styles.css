@@ -5,3 +5,13 @@
     justify-content: space-between;
     height: 80px;  
 }
+
+@media only screen and (max-width: 1080px) {
+    .short-info-container{
+        margin: 0 25px 25px 25px;
+        height: 100px;
+        min-width: 278px;
+        padding-bottom: 25px;
+        border-bottom: 1px hsl(180, 8%, 52%) solid;
+    }
+}
