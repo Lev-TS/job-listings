@@ -1,7 +1,5 @@
 .header #image {
 	display: inline-block;
-	min-height: 100px;
-	min-width: 1152px;
 	width: 100%;
 	font-size: 0;
 	line-height: 0;

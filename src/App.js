@@ -12,7 +12,7 @@ class App extends React.Component {
 		super(props);
 		this.state = {
 			listings: data,
-			filters: [],
+			filters: []
 		};
 	}
 
@@ -24,7 +24,7 @@ class App extends React.Component {
 			if (!filters.includes(value)) {
 				filters = filters.concat(value);
 			}
-			return { filters };
+			return { filters, lastFilter: value };
 		});
 	};
 
@@ -40,28 +40,28 @@ class App extends React.Component {
 	};
 
 	handleClear = (event) => {
-		this.setState({ filters: [] });
+		this.setState({ filters: [], remainingFilters: [] });
 	};
 
 	render() {
-		const { listings, filters } = this.state;
+		let { listings, filters } = this.state;
 
-		const filteredListintings = listings.filter((listing) => {
-			if (filters.length === 0) {
-				return true;
-			} else if (filters.includes(listing.role)) { 				
-				return true
-				// filters.some(
-				// 	// (filter) =>
-				// 	// 	filter === listing.role &&
-				// 	// 	filter === listing.level &&
-				// 	// 	listing.languages.includes(filter) &&
-				// 	// 	listing.tools.includes(filter)
-				// );
-			} else {
-				return false
-			}
-		});
+		const filterListings = () => {
+			filters.forEach(filter=>{
+				listings.forEach(listing => {
+					if (filter === listing.role) {
+						listings = listings.filter(li => li.role === filter)
+					} else if (filter === listing.level) {
+						listings = listings.filter(li => li.level === filter)
+					} else if (listing.languages.includes(filter)) {
+						listings = listings.filter(li => li.languages.includes(filter))
+					} else if (listing.tools.includes(filter)) {
+						listings = listings.filter(li => li.tools.includes(filter))
+					}
+				})
+			});
+			return listings;
+		}
 
 		return (
 			<div className="App">
@@ -72,7 +72,7 @@ class App extends React.Component {
 					handleClear={this.handleClear}
 				/>
 				<CardList
-					listings={filteredListintings}
+					listings={filterListings()}
 					handleAddFilter={this.handleAddFilter}
 				/>
 				<Attribution />
