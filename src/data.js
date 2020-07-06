@@ -92,7 +92,7 @@ export const data = [
   {
     "id": 7,
     "company": "Shortly",
-    "logo": "./logos/shortly.svg",
+    "logo": "/logos/shortly.svg",
     "new": false,
     "featured": false,
     "position": "Junior Developer",
